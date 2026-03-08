@@ -37,12 +37,12 @@ To compile this mod yourself, you will need **Java 21** and Git installed on you
     * **Linux/Mac:** `./gradlew build`
 3. The compiled `.jar` file will be located in the `build/libs/` directory.
 
-## 🛠️ Roadmap 
+## 🛠️ Roadmap & Contributing
 
 * **[In Progress] JSON Persistence:** Currently, the configuration lives in memory via data classes (`CONFIG.kt`). We are actively migrating this to a physical `.json` file structure using `kotlinx.serialization` for hot-reloading capabilities.
 * **[Planned] YACL Integration:** Future support for *Yet Another Config Lib* for an in-game UI.
 
-
+Pull requests are welcome! Please ensure your code follows standard Kotlin conventions and does not break the $O(\log n)$ constraints in the probability engines.
 
 ## ⚖️ EULA Compliance & Disclaimer
 
