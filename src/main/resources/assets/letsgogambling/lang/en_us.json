@@ -1,0 +1,34 @@
+{
+
+  "util.letsgogambling.item.netherite" : "NETHERITE",
+  "util.letsgogambling.item.gold" : "GOLD",
+  "util.letsgogambling.item.diamond" : "DIAMOND",
+  "util.letsgogambling.item.copper" : "COPPER",
+  "util.letsgogambling.item.iron" : "IRON",
+  "util.letsgogambling.onlyplayers" : "This command can only be used by players",
+  "util.letsgogambling.notenoughcurrency" : "Not enough %1$s.",
+
+
+  "block.letsgogambling.slot_machine": "Slot Machine",
+  "item.letsgogambling.slot_machine": "Slot Machine",
+  "util.letsgogambling.slot_machine.haswinbroadcast" :  "%1$s Has won on the slot machine, with a %2$s rarity ",
+  "util.letsgogambling.slot_machine.haswin" :  "You've won on the slot machine, with a %1$s rarity",
+  "util.letsgogambling.slot_machine.results" : "[%1$s %2$s %3$s] (x%4$d)",
+  "util.letsgogambling.slot_machine.baditem" :"Incorrect item, bet with %1$s.",
+  "util.letsgogambling.slot_machine.emptyhand" : "You need to have an empty hand.",
+  "util.letsgogambling.slot_machine.betvalue" :"valor apostado %1$d.",
+  "util.letsgogambling.slot_machine.jackpot" : "JACKPOT",
+  "util.letsgogambling.slot_machine.medium" : "MEDIUM",
+  "util.letsgogambling.slot_machine.big" : "BIG",
+  "util.letsgogambling.slot_machine.low" : "LOW",
+  "util.letsgogambling.slot_machine.reint" : "reimbursement",
+  "util.letsgogambling.slot_machine.other" : "OTHER",
+
+  "util.letsgogambling.littleanimals.noanimal" : "Non-existent creature.",
+  "util.letsgogambling.littleanimals.betregistered" : "Bet for %1$s of x%2$d registered.",
+  "util.letsgogambling.littleanimals.winninganimal" : "Winning creature is %1$s",
+  "util.letsgogambling.littleanimals.haswin" : "You've won on Little Animals %1$s.",
+  "util.letsgogambling.littleanimals.chicken_jockey" : "Chicken Jockey",
+  "util.letsgogambling.littleanimals.nautilus" : "Nautilus"
+
+}

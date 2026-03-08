@@ -1,0 +1,31 @@
+{
+  "util.letsgogambling.item.netherite" : "NETHERITA",
+  "util.letsgogambling.item.gold" : "ORO",
+  "util.letsgogambling.item.diamond" : "DIAMANTE",
+  "util.letsgogambling.item.copper" : "COBRE",
+  "util.letsgogambling.item.iron" : "HIERRO",
+  "util.letsgogambling.onlyplayers" : "Este comando solo puede ser usado por jugadores.",
+  "util.letsgogambling.notenoughcurrency" : "%1$s insuficientes.",
+
+  "block.letsgogambling.slot_machine": "Máquina Tragaperras",
+  "item.letsgogambling.slot_machine": "Máquina Tragaperras",
+  "util.letsgogambling.slot_machine.haswinbroadcast" :  "%1$s Ha ganado en la Tragaperras, con rareza %2$s",
+  "util.letsgogambling.slot_machine.haswin" :  "Has ganado en la Tragaperras, con rareza %1$s",
+  "util.letsgogambling.slot_machine.results" : "[%1$s %2$s %3$s] (x%4$d)",
+  "util.letsgogambling.slot_machine.emptyhand" : "Necesitas tener la mano vacía.",
+  "util.letsgogambling.slot_machine.baditem" :"Item incorrecto, apostar con %1$s.",
+  "util.letsgogambling.slot_machine.betvalue" :"bet value %1$d.",
+  "util.letsgogambling.slot_machine.jackpot" : "MAYOR",
+  "util.letsgogambling.slot_machine.medium" : "MEDIO",
+  "util.letsgogambling.slot_machine.big" : "GRANDE",
+  "util.letsgogambling.slot_machine.low" : "BAJO",
+  "util.letsgogambling.slot_machine.reint" : "REINTEGRO",
+  "util.letsgogambling.slot_machine.other" : "OTRO",
+
+  "util.letsgogambling.littleanimals.noanimal" : "Criatura no existente.",
+  "util.letsgogambling.littleanimals.betregistered" : "Apuesta por %1$s de %2$d registrada.",
+  "util.letsgogambling.littleanimals.winninganimal" : "La criatura ganadora es %1$s.",
+  "util.letsgogambling.littleanimals.haswin" : "Has ganado en los animalitos %1$s.",
+  "util.letsgogambling.littleanimals.chicken_jockey" : "Jinete Avicola",
+  "util.letsgogambling.littleanimals.nautilus" : "Nautilo"
+}

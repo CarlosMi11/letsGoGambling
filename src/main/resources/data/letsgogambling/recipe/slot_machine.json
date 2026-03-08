@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "R A",
+    "L E",
+    "INI"
+  ],
+  "key": {
+    "A": { "item": "minecraft:redstone_lamp" },
+    "R": { "item": "minecraft:redstone" },
+    "E": { "item": "minecraft:emerald_block" },
+    "L": { "item": "minecraft:lever" },
+    "N": { "item": "minecraft:nether_star"},
+    "I": {"item" :  "minecraft:iron_block"}
+  },
+  "result": {
+    "id": "letsgogambling:slot_machine",
+    "count": 1
+  }
+}

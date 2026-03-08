@@ -1,0 +1,45 @@
+{
+	"schemaVersion": 1,
+	"id": "letsgogambling",
+	"version": "${version}",
+	"name": "letsgogambling",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/letsgogambling/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			{
+				"value": "once.gambling.Letsgogambling",
+				"adapter": "kotlin"
+			}
+		],
+		"client": [
+			{
+				"value": "once.gambling.LetsgogamblingClient",
+				"adapter": "kotlin"
+			}
+		]
+	},
+	"mixins": [
+		"letsgogambling.mixins.json",
+		{
+			"config": "letsgogambling.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.17.3",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*",
+		"fabric-language-kotlin": ">=1.10.0"
+	}
+}
