@@ -29,7 +29,7 @@ To compile this mod yourself, you will need **Java 21** and Git installed on you
 
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/CarlosMi11/letsGoGambling.git](https://github.com/CarlosMi11/letsGoGambling.git)
+   git clone https://github.com/CarlosMi11/letsGoGambling.git
    cd letsgogambling-fabric
     ```
 2. Build the project using the Gradle wrapper:
