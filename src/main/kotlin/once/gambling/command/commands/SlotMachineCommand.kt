@@ -37,7 +37,7 @@ class SlotMachineCommand : OnceCommand {
 
 
         SlotMachineEngine.rollInText(amount, player){
-            t, p -> p.sendMessage(t, false)
+            t, p -> p.sendMessage(t, true)
             true
         }
 
@@ -46,7 +46,7 @@ class SlotMachineCommand : OnceCommand {
 
     override fun getCommand(): LiteralArgumentBuilder<ServerCommandSource> {
         return CommandManager.literal(commandName)
-            .requires { source -> source.hasPermissionLevel(2) }
+            //.requires { source -> source.hasPermissionLevel(2) }
             .then(
                 CommandManager.argument(ARG_AMOUNT, IntegerArgumentType.integer(1, 64))
                 .suggests { _, builder ->

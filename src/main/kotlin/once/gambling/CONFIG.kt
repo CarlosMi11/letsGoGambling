@@ -23,12 +23,12 @@ data class config_slot_machine(
         ),
         SlotResult.DIAMOND to SlotResultConfig(
             1.05,
-            20,
+            25,
             "util.letsgogambling.slot_machine.big"
         ),
         SlotResult.GOLD to SlotResultConfig(
             4.0,
-            4,
+            5,
             "util.letsgogambling.slot_machine.medium"
         ),
         SlotResult.IRON to SlotResultConfig(

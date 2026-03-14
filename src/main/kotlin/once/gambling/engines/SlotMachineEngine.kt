@@ -3,7 +3,6 @@ package once.gambling.engines
 import net.minecraft.entity.player.PlayerEntity
 import net.minecraft.item.Item
 import net.minecraft.item.Items
-import net.minecraft.server.MinecraftServer
 import net.minecraft.text.MutableText
 import net.minecraft.text.Text
 import net.minecraft.util.Formatting
@@ -31,7 +30,8 @@ object SlotMachineEngine {
         SlotResult.DIAMOND to Text.translatable("util.letsgogambling.item.diamond").formatted(Formatting.AQUA),
         SlotResult.GOLD to Text.translatable("util.letsgogambling.item.gold").formatted(Formatting.YELLOW),
         SlotResult.IRON to Text.translatable("util.letsgogambling.item.iron").formatted(Formatting.GRAY),
-        SlotResult.COPPER to Text.translatable("util.letsgogambling.item.copper").formatted(Formatting.GOLD)
+        SlotResult.COPPER to Text.translatable("util.letsgogambling.item.copper").formatted(Formatting.GOLD),
+        SlotResult.COBBLESTONE to Text.translatable("util.letsgogambling.item.cobblestone").formatted(Formatting.DARK_GRAY),
     )
 
     private var cumulativeWeights = TreeMap<Double, SlotResult>()
@@ -93,13 +93,13 @@ object SlotMachineEngine {
 
         if (premio > 0) {
             val winningItem = giroFinal.first()
-            val rarity = CommandSlotResult.getValue(winningItem)
+            val rarity = config.RTP.getValue(winningItem)
             when (winningItem) {
                 SlotResult.DIAMOND -> {
                     val msg = Text.empty().append(
                         Text.translatable(
                             "util.letsgogambling.slot_machine.haswin",
-                            rarity
+                            rarity.traslationKey
                         )
                     )
                     player.sendMessage(msg)
@@ -109,7 +109,7 @@ object SlotMachineEngine {
                         Text.translatable(
                             "util.letsgogambling.slot_machine.haswinbroadcast",
                             player.displayName,
-                            rarity
+                            rarity.traslationKey
                         )
                     )
                     player.server?.playerManager?.broadcast(msg, false)
@@ -133,4 +133,12 @@ object SlotMachineEngine {
 
         return config.RTP[winningItem]?.mult ?: 0
     }
+    val RTPval: Double
+        get() {
+            val totalWeight = config.RTP.values.sumOf { it.weight }
+            if (totalWeight == 0.0) return 0.0
+
+            val expectedValue = config.RTP.values.sumOf { it.mult * it.weight }
+            return expectedValue / totalWeight
+        }
 }

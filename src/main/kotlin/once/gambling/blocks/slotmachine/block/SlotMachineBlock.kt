@@ -26,9 +26,15 @@ import net.minecraft.state.StateManager
 import net.minecraft.state.property.DirectionProperty
 import net.minecraft.state.property.Properties
 import net.minecraft.block.BlockState
+import net.minecraft.block.Blocks
+import net.minecraft.block.enums.DoubleBlockHalf
+import net.minecraft.entity.LivingEntity
 import net.minecraft.item.ItemPlacementContext
+import net.minecraft.server.world.ServerWorld
+import net.minecraft.state.property.EnumProperty
 import net.minecraft.util.math.Direction
 import once.gambling.CONFIG
+
 
 
 class SlotMachineBlock(settings: Settings) : Block(settings), BlockEntityProvider{
@@ -118,7 +124,7 @@ class SlotMachineBlock(settings: Settings) : Block(settings), BlockEntityProvide
     }
     override fun getOutlineShape(state: BlockState, world: BlockView, pos: BlockPos, context: ShapeContext): VoxelShape {
 
-        return Block.createCuboidShape(0.0, 0.0, 0.0, 16.0, 32.0, 16.0)
+        return Block.createCuboidShape(0.0, 0.0, 0.0, 16.0, 16.0, 16.0)
     }
     override fun isTransparent(state: BlockState, world: BlockView, pos: BlockPos): Boolean {
         return true

@@ -1,9 +1,8 @@
 {
   "variants": {
-    "facing=north": { "model": "letsgogambling:block/slot_machine" },
-    "facing=south": { "model": "letsgogambling:block/slot_machine", "y": 180 },
-    "facing=east": { "model": "letsgogambling:block/slot_machine", "y": 90 },
-    "facing=west": { "model": "letsgogambling:block/slot_machine", "y": 270 }
+      "facing=north": { "model": "letsgogambling:block/slot_machine", "y": 270 },
+      "facing=south": { "model": "letsgogambling:block/slot_machine", "y": 90 },
+      "facing=east":  { "model": "letsgogambling:block/slot_machine", "y": 0 },
+      "facing=west":  { "model": "letsgogambling:block/slot_machine", "y": 180 }
   }
-
 }
