@@ -8,11 +8,11 @@
   "key": {
     "R": { "item": "minecraft:redstone_block" },
     "E": { "item": "minecraft:red_concrete" },
-    "N": { "item": "minecraft:black_concrete"},
-    "S": {"item" :  "minecraft:stone"}
+    "B": { "item": "minecraft:black_concrete" },
+    "S": { "item": "minecraft:stone" }
   },
   "result": {
-    "id": "letsgogambling:slot_machine",
+    "id": "letsgogambling:jump_button",
     "count": 1
   }
 }

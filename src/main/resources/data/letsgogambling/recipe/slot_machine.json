@@ -1,16 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "R A",
-    "L E",
-    "INI"
+    " I ",
+    "YKC",
+    "RIR"
   ],
   "key": {
-    "A": { "item": "minecraft:redstone_lamp" },
+
     "R": { "item": "minecraft:redstone" },
-    "E": { "item": "minecraft:emerald_block" },
-    "L": { "item": "minecraft:lever" },
-    "N": { "item": "minecraft:nether_star"},
+    "Y": { "item": "minecraft:orange_dye" },
+    "K": { "item": "minecraft:gray_dye" },
+    "C": { "item": "minecraft:cyan_dye"},
     "I": {"item" :  "minecraft:iron_block"}
   },
   "result": {
