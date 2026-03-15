@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "powered=true": { "model": "letsgogambling:block/jump_button_active"},
+    "powered=false": { "model": "letsgogambling:block/jump_button_inactive"}
+  }
+}
