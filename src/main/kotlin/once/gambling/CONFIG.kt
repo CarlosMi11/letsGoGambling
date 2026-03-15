@@ -17,18 +17,18 @@ data class config_slot_machine(
     val block : config_slot_machine_block = config_slot_machine_block(),
     val RTP: Map<SlotResult, SlotResultConfig> = mapOf<SlotResult, SlotResultConfig>(
         SlotResult.NETHERITE to SlotResultConfig(
-            0.055,
+            0.105,
             100,
             "util.letsgogambling.slot_machine.jackpot"
         ),
         SlotResult.DIAMOND to SlotResultConfig(
-            1.05,
+            2.05,
             25,
             "util.letsgogambling.slot_machine.big"
         ),
         SlotResult.GOLD to SlotResultConfig(
-            4.0,
-            5,
+            5.7,
+            4,
             "util.letsgogambling.slot_machine.medium"
         ),
         SlotResult.IRON to SlotResultConfig(
@@ -37,7 +37,7 @@ data class config_slot_machine(
             "util.letsgogambling.slot_machine.low"
         ),
         SlotResult.COPPER to SlotResultConfig(
-            42.75,
+            40.0,
             1,
             "util.letsgogambling.slot_machine.reint"
         ),

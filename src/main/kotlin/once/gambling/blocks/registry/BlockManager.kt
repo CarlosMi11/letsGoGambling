@@ -1,5 +1,6 @@
 package once.gambling.blocks.registry
 
+import once.gambling.blocks.button.JumpButton
 import once.gambling.blocks.slotmachine.block.SlotMachineBlock
 
 
@@ -11,7 +12,12 @@ object BlockManager {
         SlotMachineBlock.settings,
         true
     )
-
+    public val jumpButtonInstance = BRegistry.registerBlock(
+        "jump_button",
+        ::JumpButton,
+        JumpButton.settings,
+        true
+    )
     public fun registerBlocks(){
 
     }

@@ -10,6 +10,9 @@ import net.minecraft.item.Items
 import net.minecraft.text.Text
 import net.minecraft.util.Formatting
 import net.minecraft.util.Hand
+import net.minecraft.util.math.Direction
+import net.minecraft.util.shape.VoxelShape
+import net.minecraft.util.shape.VoxelShapes
 import kotlin.math.min
 
 object Utilis {
@@ -80,6 +83,24 @@ object Utilis {
             remaining -= chunkSize
         }
         return true
+    }
+    fun rotateShape(to: Direction, shape: VoxelShape): VoxelShape {
+        val buffer = arrayOf(shape, VoxelShapes.empty())
+
+
+        val times = (to.horizontal - Direction.NORTH.horizontal + 4) % 4
+
+        for (i in 0 until times) {
+            buffer[0].forEachBox { minX, minY, minZ, maxX, maxY, maxZ ->
+                buffer[1] = VoxelShapes.union(
+                    buffer[1],
+                    VoxelShapes.cuboid(1.0 - maxZ, minY, minX, 1.0 - minZ, maxY, maxX)
+                )
+            }
+            buffer[0] = buffer[1]
+            buffer[1] = VoxelShapes.empty()
+        }
+        return buffer[0]
     }
 }
 

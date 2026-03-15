@@ -22,9 +22,10 @@ import net.minecraft.registry.Registries
 import net.minecraft.sound.SoundCategory
 import net.minecraft.util.Identifier
 import once.gambling.CONFIG
+import once.gambling.blocks.OnceEntityBlock
 
 class SlotMachineBlockEntity(pos: BlockPos, state: BlockState) :
-    BlockEntity(BlockEntityManager.SlotMachineEntity, pos, state){
+    BlockEntity(BlockEntityManager.SlotMachineEntity, pos, state), OnceEntityBlock {
     private var clicks : Int = 0
     private var apuesta : Int = 0
     private val config get() = CONFIG.slot_machine.block
@@ -99,6 +100,8 @@ class SlotMachineBlockEntity(pos: BlockPos, state: BlockState) :
         clicks = 0
         return c
     }
+
+
     override fun writeNbt(nbt: NbtCompound, registryLookup: WrapperLookup) {
         super.writeNbt(nbt, registryLookup)
 
@@ -119,4 +122,7 @@ class SlotMachineBlockEntity(pos: BlockPos, state: BlockState) :
         return createNbt(registryLookup)
     }
 
+    override fun activate(player : PlayerEntity) {
+        if(isFull())roll(player)
+    }
 }

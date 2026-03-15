@@ -99,7 +99,7 @@ object SlotMachineEngine {
                     val msg = Text.empty().append(
                         Text.translatable(
                             "util.letsgogambling.slot_machine.haswin",
-                            rarity.traslationKey
+                            Text.translatable(rarity.traslationKey)
                         )
                     )
                     player.sendMessage(msg)
@@ -109,7 +109,7 @@ object SlotMachineEngine {
                         Text.translatable(
                             "util.letsgogambling.slot_machine.haswinbroadcast",
                             player.displayName,
-                            rarity.traslationKey
+                            Text.translatable(rarity.traslationKey)
                         )
                     )
                     player.server?.playerManager?.broadcast(msg, false)

@@ -8,15 +8,15 @@
   "util.letsgogambling.item.cobblestone" : "COBBLESTONE",
   "util.letsgogambling.onlyplayers" : "This command can only be used by players",
   "util.letsgogambling.notenoughcurrency" : "Not enough %1$s.",
+  "util.letsgogambling.jumponahardbutton" : "Jump over a big button next to the machine.",
 
-
+  "block.letsgogambling.jump_button": "Big Button",
   "block.letsgogambling.slot_machine": "Slot Machine",
   "item.letsgogambling.slot_machine": "Slot Machine",
   "util.letsgogambling.slot_machine.haswinbroadcast" :  "%1$s Has won on the slot machine a %2$s prize",
   "util.letsgogambling.slot_machine.haswin" :  "You've won a %1$s prize",
   "util.letsgogambling.slot_machine.results" : "[%1$s %2$s %3$s] (x%4$d)",
   "util.letsgogambling.slot_machine.baditem" :"Incorrect item, bet with %1$s.",
-  "util.letsgogambling.slot_machine.emptyhand" : "You need to have an empty hand.",
   "util.letsgogambling.slot_machine.betvalue" :"valor apostado %1$d.",
   "util.letsgogambling.slot_machine.jackpot" : "JACKPOT",
   "util.letsgogambling.slot_machine.medium" : "MEDIUM",
